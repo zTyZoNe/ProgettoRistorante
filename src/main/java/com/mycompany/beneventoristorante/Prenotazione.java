@@ -9,19 +9,19 @@ package com.mycompany.beneventoristorante;
  *
  * @author STUDENTE
  */
-public class Cliente 
+public class Prenotazione 
 {
     private String nome;
     private String cognome;
-    private int posti; 
+    private int posti;
     
-    public Cliente(String nome, String cognome, int posti)
+    public Prenotazione(String nome, String cognome, int posti)
     {
         this.nome=nome;
         this.cognome=cognome;
         this.posti=posti;
     }
-    public Cliente(Cliente l)
+    public Prenotazione(Prenotazione l)
     {
         nome=l.getNome();
         cognome=l.getCognome();
