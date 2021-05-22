@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>900</x>
+      <y>270</y>
+      <w>390</w>
+      <h>280</h>
+    </coordinates>
+    <panel_attributes>Ristorante
+--
+-N_MAX_PERSONE=20 int
+--
++Ristorante()
++getNumMaxPersone():int
++getNumPersone():int
++setPersona(in int posizione, in Prenotazione[]persona):void
++getPersona(in int posizione):String
++rimuoviPrenotazione (in int posizione):int
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>240</x>
+      <y>270</y>
+      <w>400</w>
+      <h>280</h>
+    </coordinates>
+    <panel_attributes>Prenotazione
+--
+-nome:String
+-cognome:String
+-posti:int
+--
++Prenotazione(in nome:String, in cognome:String, in posti:int)
++setNome(in nome:String):void
++getNome():String
++setCognome(in cognome:String):void
++getCognome():String
++setPosti(in Posti:int):void
++getPosti():int
++toString(in</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>630</x>
+      <y>310</y>
+      <w>290</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>270.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>670</x>
+      <y>290</y>
+      <w>250</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>-elencoClienti:Prenotazione[]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>660</x>
+      <y>320</y>
+      <w>240</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>
+0...N_MAX_PERSONE                   1</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
